@@ -1,1 +1,1 @@
-Ejercio práctico de tienda online usando HTML y CSS 😎
+Ejercicio práctico de tienda online usando HTML y CSS 😎
