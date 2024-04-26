@@ -51,6 +51,14 @@
       margin-bottom: 36px;
       text-align: start;
     }
+
+.value {
+    color: var(--very-light-pink);
+    font-size: var(--md);
+    margin: 8px 0 32px 0;
+
+}
+
     .form {
       display: flex;
       flex-direction: column;
@@ -76,11 +84,11 @@
     .input-password {
       margin-bottom: 22px;
     }
-    .primary-button {
-      background-color: var(--hospital-green);
+    .secondary-button {
+      background-color: var(--white);
       border-radius: 8px;
-      border: none;
-      color: var(--white);
+      border: 1px solid var(--hospital-green);
+      color: var(--hospital-green);
       width: 100%;
       cursor: pointer;
       font-family: 'Quicksand', sans-serif;
@@ -97,10 +105,10 @@
         height: 100%;
       }
       
-      .primary-button{
+      .secondary-button{
         width: 300px;
         position: absolute;
-        bottom: 0;
+        bottom: 0px;
         margin-bottom: 24px;
     }
     }
@@ -110,21 +118,22 @@
     <div class="login">
         <div class="form-container">
 
-            <h1 class="title">Crear cuenta</h1>
+            <h1 class="title">Mi cuenta</h1>
             
             <form action="" class="form">
                 
                 <label for="name" class="label">Nombre</label>
-                <input type="text" id="name" placeholder="Tu nombre" class="input input-name">
+                <p class="value">Gabriel González</p>
 
                 <label for="email" class="label">Correo electrónico</label>
-                <input type="email" id="email" placeholder="ejemplo@gmail.com" class="input input-email">
+                <p class="value">ga.go.re@gmail.com</p>
                 
-                <label for="new-password" class="label">Password</label>
-                <input type="password" id="new-password" placeholder="**********" class="input input-password">
+                <label for="password" class="label">Password</label>
+                <p class="value">**********</p>
 
-                <input type="submit" value="Crear cuenta" class="primary-button create-button">
+                <p class="value"></p>
             </form>
+            <button class="secondary-button signup-button">Editar</button>
         </div>
     </div>
     
