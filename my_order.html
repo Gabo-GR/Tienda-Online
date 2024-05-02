@@ -55,23 +55,41 @@
     }
 
     .order{
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 16px;
+      align-items: center;
       background-color: var(--text-input-field);
+      margin-bottom: 24px;
       border-radius: 12px;
+      padding: 0 24px;
     }
 
     .order p:nth-child(1){
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
     }
 
     .order span:nth-child(1){
       font-weight: bold;
     }
 
+    .order p:nth-child(2){
+      font-size: var(--md);
+      font-weight: bold;
+      text-align: end;
+    }
+
     .shopping-cart{
       display: grid;
       grid-template-columns: auto 1fr auto;
+      gap: 16px;
+      margin-bottom: 24px;
+      align-items: center;
+    }
+
+    .shopping-cart figure{
+      margin: 0;
     }
 
     .shopping-cart figure img{
